@@ -8,4 +8,6 @@ COPY package.json /usr/src/app/
 RUN yarn install
 COPY . /usr/src/app
 
+ENV NEW_RELIC_NO_CONFIG_FILE=true
+
 CMD [ "npm", "start" ]
