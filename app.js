@@ -6,6 +6,7 @@
 
 process.title = 'letschat';
 
+require('newrelic');
 require('colors');
 
 var _            = require('lodash'),
